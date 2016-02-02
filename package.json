@@ -1,0 +1,23 @@
+{
+  "name": "js-sandbox",
+  "version": "0.0.1",
+  "description": "",
+  "main": "sample.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:js": "browserify -t [ babelify --presets [ es2015 ] ] src/app.js -o dist/app.js -d",
+    "watch:js": "watchify -t [ babelify --presets [ es2015 ] ] src/app.js -o dist/app.js -d -v",
+    "watch": "npm run watch:js",
+    "start": "npm run watch"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "moment": "^2.11.1"
+  },
+  "devDependencies": {
+    "babelify": "^7.2.0",
+    "browserify": "^13.0.0",
+    "watchify": "^3.7.0"
+  }
+}
