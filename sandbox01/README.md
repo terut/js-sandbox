@@ -6,8 +6,15 @@ Note that this repository is experimental.
 ```sh
 $ npm install
 $ npm run start
+
+# if you wanna run test
 $ npm run -s test:js
+
+# if you wanna run lint 
 $ npm run -s lint:js
+
+# if you wanna see the coverted js on babel
+$ babel src/person.js
 
 # Run server which document root is ./ with node, ruby, python, php or somthing.
 # Open http://localhost:3000 and see console of developer tool.
